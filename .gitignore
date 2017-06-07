@@ -64,3 +64,5 @@ Thumbs.db
 .python-version
 .settings
 
+## my local test
+local-test/

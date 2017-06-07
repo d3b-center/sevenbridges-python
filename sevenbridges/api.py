@@ -13,6 +13,7 @@ from sevenbridges.models.storage_import import Import
 from sevenbridges.models.task import Task
 from sevenbridges.models.user import User
 from sevenbridges.models.volume import Volume
+from sevenbridges.models.datasets import Datasets
 
 
 class Api(HttpClient):
@@ -30,6 +31,7 @@ class Api(HttpClient):
     imports = Import
     exports = Export
     rate_limit = RateLimit
+    datasets = Datasets
 
     def __init__(self, url=None, token=None, oauth_token=None, config=None,
                  timeout=None, download_max_workers=16, upload_max_workers=16,
