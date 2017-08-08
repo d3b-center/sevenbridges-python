@@ -32,7 +32,7 @@ class Volume(Resource):
     service = CompoundField(VolumeService, read_only=True)
     created_on = DateTimeField(read_only=True)
     modified_on = DateTimeField(read_only=True)
-    active = BooleanField(read_only=True)
+    active = BooleanField(read_only=False)
 
     def __str__(self):
         return six.text_type('<Volume: id={id}>'.format(id=self.id))
